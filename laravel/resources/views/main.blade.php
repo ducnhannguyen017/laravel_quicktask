@@ -20,8 +20,8 @@
     
 </head>
 <body>
-    <a href="#">Vietnamese</a>
-    <a href="#">English</a>
+    <a href="/lang/vi">{{ trans('messages.Vietnamese') }}</a>
+    <a href="/lang/en">{{ trans('messages.English') }}</a>
     @include('alert')
     @yield('main')
 </body>

@@ -3,7 +3,7 @@
 @section('main')
 
 <div id="login">
-    <h3 class="text-center text-white pt-5">Login</h3>
+    <h3 class="text-center text-white pt-5">{{ trans('messages.Login') }}</h3>
     <div class="container">
         <div
             id="login-row"
@@ -21,7 +21,7 @@
                         <h3 class="text-center text-info">Login</h3>
                         <div class="form-group">
                             <label for="username" class="text-info"
-                                >Username:</label
+                                >{{ trans('messages.Username') }}:</label
                             ><br />
                             <input
                                 type="text"
@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="password" class="text-info"
-                                >Password:</label
+                                >{{ trans('messages.Password') }}:</label
                             ><br />
                             <input
                                 type="password"
@@ -43,7 +43,7 @@
                         </div>
                         <div class="form-group">
                             <label for="remember-me" class="text-info">
-                                <span>Rememberme</span>
+                                <span>{{ trans('messages.Rememberme') }}</span>
                                 <span>
                                     <input
                                         id="rememberme"
@@ -59,11 +59,11 @@
                                 type="submit"
                                 name="submit"
                                 class="btn btn-info btn-md"
-                                value="Login"
+                                value="{{ trans('messages.Login') }}"
                             />
                         </div>
                         <div id="register-link" class="text-right">
-                            <a href="#" class="text-info">Register</a>
+                            <a href="" class="text-info">{{ trans('messages.Register') }}</a>
                         </div>
                     </form>
                 </div>

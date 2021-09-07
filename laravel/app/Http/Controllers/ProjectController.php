@@ -15,6 +15,7 @@ class ProjectController extends Controller
     public function index()
     {
         //
+        return view('index');
     }
 
     /**
@@ -25,6 +26,7 @@ class ProjectController extends Controller
     public function create()
     {
         //
+        return view('create');
     }
 
     /**
@@ -58,6 +60,7 @@ class ProjectController extends Controller
     public function edit(Project $project)
     {
         //
+        return view('edit');
     }
 
     /**
